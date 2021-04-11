@@ -46,6 +46,17 @@
             </pre>
         </div>
         
+        <div class="border">
+            <p>Line-based placement spanning tracks with the span keyword</p>
+            <div class="grid-container grid-container--1">
+                <div class="box boxe-a">A</div>
+                <div class="box boxe-b">B</div>
+                <div class="box">C</div>
+                <div class="box">D</div>
+            </div>
+            <pre>.boxe-a { grid-column: 1 / span 2; }<br>.boxe-b {<br>  grid-column: 3;<br>  grid-row: 1 / span 2; <br>}
+            </pre>
+        </div>
     </div>
 </body>
 </html>

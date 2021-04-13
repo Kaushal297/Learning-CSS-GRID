@@ -49,8 +49,20 @@
         <div class="border">
             <p>Line-based placement spanning tracks with the span keyword</p>
             <div class="grid-container grid-container--1">
-                <div class="box boxe-a">A</div>
-                <div class="box boxe-b">B</div>
+                <div class="box box-a--usingspan">A</div>
+                <div class="box box-b--usingspan">B</div>
+                <div class="box">C</div>
+                <div class="box">D</div>
+            </div>
+            <pre>.box-a--usingspan { grid-column: 1 / span 2; }<br>.box-b--usingspan {<br>  grid-column: 3;<br>  grid-row: 1 / span 2; <br>}
+            </pre>
+        </div>
+
+        <div class="border">
+            <p>Line-based placement named lines</p>
+            <div class="grid-container grid-container--byname">
+                <div class="box boxe-a--byname">A</div>
+                <div class="box boxe-b--byname">B</div>
                 <div class="box">C</div>
                 <div class="box">D</div>
             </div>

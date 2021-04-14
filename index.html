@@ -61,10 +61,23 @@
         <div class="border">
             <p>Line-based placement named lines</p>
             <div class="grid-container grid-container--byname">
-                <div class="box boxe-a--byname">A</div>
-                <div class="box boxe-b--byname">B</div>
+                <div class="box box-a--byname">A</div>
+                <div class="box box-b--byname">B</div>
                 <div class="box">C</div>
                 <div class="box">D</div>
+            </div>
+            <pre>.boxe-a { grid-column: 1 / span 2; }<br>.boxe-b {<br>  grid-column: 3;<br>  grid-row: 1 / span 2; <br>}
+            </pre>
+        </div>
+
+        <div class="border">
+            <p>Line-based placement named lines with spans</p>
+            <div class="grid-container grid-container--byspan">
+                <div class="box box-a--byspan">A</div>
+                <div class="box">B</div>
+                <div class="box">C</div>
+                <div class="box box-d--byspan">D</div>
+                <div class="box box-e--byspan">E</div>
             </div>
             <pre>.boxe-a { grid-column: 1 / span 2; }<br>.boxe-b {<br>  grid-column: 3;<br>  grid-row: 1 / span 2; <br>}
             </pre>

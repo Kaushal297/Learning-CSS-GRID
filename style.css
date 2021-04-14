@@ -18,6 +18,7 @@
 .grid-container {
     display: grid;
     padding: 10px;
+    grid-gap: 10px;
 }
 
 p {
@@ -38,15 +39,17 @@ p {
 .grid-container--1 {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
 }
 
 .grid-container--byname {
     grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr;
     grid-template-rows: [row1-start] 1fr [row2-start] 1fr [row2-ends];
-    grid-gap: 10px;
 }
 
+.grid-container--byspan {
+    grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 2fr [col3-ends];
+    grid-template-rows: [row1-start] 1fr [row2-start] 1fr [row3-start] 1fr [row3-ends];
+}
 /* 
     Actual Property                         shorthand property                                      furthur Shorthand
 
@@ -94,11 +97,23 @@ p {
     grid-row: 1 / span 2;
 }
 
-.boxe-a--byname {
+.box-a--byname {
     grid-column: col1-start / col3-start;
 }
 
-.boxe-b--byname {
+.box-b--byname {
     grid-column: col3-start;
     grid-row: row1-start / row2-ends;
+}
+
+.box-a--byspan {
+    grid-column: col1-start / span 2;
+}
+
+.box-d--byspan {
+    grid-column: col2-start / span 2;
+}
+
+.box-e--byspan {
+    grid-column: col1-start / span 3;
 }
